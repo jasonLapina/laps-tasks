@@ -7,6 +7,7 @@ import {
   FormControl,
   FormLabel,
   Textarea,
+  Text,
 } from "@chakra-ui/react";
 
 function AddProject() {
@@ -26,6 +27,12 @@ function AddProject() {
             <Textarea placeholder=' ' />
             <FormLabel>Description</FormLabel>
           </FormControl>
+          <Box w='100%'>
+            <Text ml='4px' mb='8px' fontWeight='semibold'>
+              Start Date
+            </Text>
+            <Input type='date' />
+          </Box>
         </VStack>
       </Box>
     </Box>
