@@ -6,6 +6,7 @@ import { ChakraProvider, Spinner } from "@chakra-ui/react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./UI/Layout";
 import MySpinner from "./UI/MySpinner";
+import { theme } from "./chakraTheme";
 // import AddProject from "./Projects/AddProject";
 
 const AddProject = lazy(() => import("./Projects/AddProject"));
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ChakraProvider>
+  <ChakraProvider theme={theme}>
     <RouterProvider router={router} />
   </ChakraProvider>
 );
